@@ -3,10 +3,10 @@ package Testcases.Railway;
 import PageObjects.Railway.HomePage;
 import PageObjects.Railway.LoginPage;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testing.annotations.AfterMethod;
-import org.testing.annotations.BeforeMethod;
-import org.testing.Test;
-import org.testing.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+import org.testng.Assert;
 
 import Common.Utilities;
 import Constant.Constant;
