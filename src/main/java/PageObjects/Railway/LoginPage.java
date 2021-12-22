@@ -11,6 +11,7 @@ public class LoginPage extends GeneralPage{
     private final By _txtPassword = By.xpath("//input[@id='password']");
     private final By _btnLogin = By.xpath("//input[@value='login']");
     private final By _lblLoginErrorMsg = By.xpath("//p[@class='message error LoginForm']");
+    private final By _lblLoginPageTitle = By.xpath("//h1[@align='center']");
 
     // Elements
     public WebElement getTxtUsername()
@@ -33,6 +34,8 @@ public class LoginPage extends GeneralPage{
         return Constant.WEBDRIVER.findElement(_lblLoginErrorMsg);
     }
 
+    public WebElement getLblLoginPageTitle() { return Constant.WEBDRIVER.findElement(_lblLoginPageTitle); }
+
     // Methods
     public HomePage login(String username,String password)
     {
@@ -48,5 +51,10 @@ public class LoginPage extends GeneralPage{
     public String getLoginErrorMsg()
     {
         return this.getLblLoginErrorMsg().getText();
+    }
+
+    public boolean checkLoginPageTitle()
+    {
+        return getLblLoginPageTitle().isDisplayed();
     }
 }

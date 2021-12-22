@@ -1,5 +1,6 @@
 package Testcases.Railway;
 
+import PageObjects.Railway.BookTicketPage;
 import PageObjects.Railway.HomePage;
 import PageObjects.Railway.LoginPage;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -72,5 +73,27 @@ public class LoginTest {
         String actualMsg = loginPage.getLoginErrorMsg();
 
         Assert.assertEquals(actualMsg,"There was a problem with your login and/or errors exist in your form.");
+    }
+
+    @Test
+    public void TC04() {
+        System.out.println("User is redirected to Book ticket page after logging in");
+        HomePage homePage = new HomePage();
+        homePage.open();
+
+        BookTicketPage bookTicketPage = homePage.gotoBookTicketPage();
+        LoginPage loginPage;
+
+        String checkLoginPage = String.valueOf(loginPage.checkLoginPageTitle());
+
+        Assert.assertEquals(checkLoginPage,"true");
+
+        loginPage.login(Constant.USERNAME,Constant.PASSWORD);
+
+        String checkBookTicketPage = String.valueOf(bookTicketPage.checkBookTicketTitle());
+        String checkBookTicketForm = String.valueOf(bookTicketPage.checkBookTicketForm());
+
+        Assert.assertEquals(checkBookTicketPage,"true");
+        Assert.assertEquals(checkBookTicketForm,"true");
     }
 }

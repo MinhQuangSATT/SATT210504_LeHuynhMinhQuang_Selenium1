@@ -39,4 +39,10 @@ public class GeneralPage {
         this.getTabLogin().click();
         return new LoginPage();
     }
+
+    public BookTicketPage gotoBookTicketPage()
+    {
+        this.getTabBookTicket().click();
+        return new BookTicketPage();
+    }
 }
