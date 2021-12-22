@@ -6,4 +6,5 @@ public class Constant {
     public static final String RAILWAY_URL = "http://www.railway.somee.com/Account/Login.cshtml";
     public static final String USERNAME = "hehehe@mailinator.com";
     public static final String PASSWORD = "123456789";
+    public static final String INVALID_PASSWORD = PASSWORD+"123";
 }

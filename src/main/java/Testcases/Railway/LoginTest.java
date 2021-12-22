@@ -43,4 +43,34 @@ public class LoginTest {
 
         Assert.assertEquals(actualMsg,expectedMsg,"Welcome message is not displayed as expected");
     }
+
+    @Test
+    public void TC02() {
+        System.out.println("TC02 - User can't login with blank 'Username' textbox");
+        HomePage homePage = new HomePage();
+        homePage.open();
+
+        LoginPage loginPage = homePage.gotoLoginPage();
+
+        loginPage.login("",Constant.PASSWORD);
+
+        String actualMsg = loginPage.getLoginErrorMsg();
+
+        Assert.assertEquals(actualMsg,"There was a problem with your login and/or errors exist in your form.");
+    }
+
+    @Test
+    public void TC03() {
+        System.out.println("User can not log into Railway with invalid password");
+        HomePage homePage = new HomePage();
+        homePage.open();
+
+        LoginPage loginPage = homePage.gotoLoginPage();
+
+        loginPage.login(Constant.USERNAME,Constant.INVALID_PASSWORD);
+
+        String actualMsg = loginPage.getLoginErrorMsg();
+
+        Assert.assertEquals(actualMsg,"There was a problem with your login and/or errors exist in your form.");
+    }
 }

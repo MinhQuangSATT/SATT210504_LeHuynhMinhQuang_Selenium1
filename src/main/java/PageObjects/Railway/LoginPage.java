@@ -44,4 +44,9 @@ public class LoginPage extends GeneralPage{
         //Land on Home page
         return new HomePage();
     }
+
+    public String getLoginErrorMsg()
+    {
+        return this.getLblLoginErrorMsg().getText();
+    }
 }
