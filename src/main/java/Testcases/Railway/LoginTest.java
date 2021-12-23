@@ -82,7 +82,7 @@ public class LoginTest {
         homePage.open();
 
         BookTicketPage bookTicketPage = homePage.gotoBookTicketPage();
-        LoginPage loginPage;
+        LoginPage loginPage = new LoginPage();
 
         String checkLoginPage = String.valueOf(loginPage.checkLoginPageTitle());
 
