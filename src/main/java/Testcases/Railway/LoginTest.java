@@ -96,4 +96,24 @@ public class LoginTest {
         Assert.assertEquals(checkBookTicketPage,"true");
         Assert.assertEquals(checkBookTicketForm,"true");
     }
+
+    @Test
+    public void TC05() {
+        System.out.println("System shows message when user enter wrong password several times");
+        HomePage homePage = new HomePage();
+        homePage.open();
+
+        LoginPage loginPage = homePage.gotoLoginPage();
+
+        loginPage.login(Constant.USERNAME,Constant.INVALID_PASSWORD);
+
+        for (int i = 1;i <= 4;i++)
+        {
+            loginPage.login("",Constant.INVALID_PASSWORD);
+        }
+
+        String actualMsg = loginPage.getLoginErrorMsg();
+
+        Assert.assertEquals(actualMsg,"You have used 4 out of 5 login attempts.After all 5 have been used, you will be unable to login for 15 minutes.");
+    }
 }
