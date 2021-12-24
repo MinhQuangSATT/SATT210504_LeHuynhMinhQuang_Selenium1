@@ -11,7 +11,7 @@ public class BookTicketPage extends GeneralPage {
     private final By frmBookTicketForm = By.xpath("//fieldset");
 
     // Elements
-    public WebElement getFrmBookTicketForm()
+    public WebElement getBookTicketForm()
     {
         return Constant.WEBDRIVER.findElement(frmBookTicketForm);
     }
@@ -19,12 +19,12 @@ public class BookTicketPage extends GeneralPage {
     // Methods
     public boolean checkBookTicketForm()
     {
-        return getFrmBookTicketForm().isDisplayed();
+        return getBookTicketForm().isDisplayed();
     }
 
     public boolean checkBookTicketPageTitle()
     {
         String title = "Book ticket";
-        return this.getLblPageTitle().getText().equals(title);
+        return this.getLabelPageTitle().getText().equals(title);
     }
 }

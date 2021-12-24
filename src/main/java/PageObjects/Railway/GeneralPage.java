@@ -27,42 +27,38 @@ public class GeneralPage {
 
     protected WebElement getTabBookTicket() { return Constant.WEBDRIVER.findElement(tabBookTicket); }
 
-    protected WebElement getLblWelcomeMessage() {
+    protected WebElement getLabelWelcomeMessage() {
         return Constant.WEBDRIVER.findElement(lblWelcomeMessage);
     }
 
     protected WebElement getTabContact() { return Constant.WEBDRIVER.findElement(tabContact); }
 
-    public WebElement getLblPageTitle() { return Constant.WEBDRIVER.findElement(lblPageTitle); }
+    public WebElement getLabelPageTitle() { return Constant.WEBDRIVER.findElement(lblPageTitle); }
 
     // Methods
     public String getWelcomeMessage()
     {
-        return this.getLblWelcomeMessage().getText();
+        return this.getLabelWelcomeMessage().getText();
     }
 
-    public LoginPage gotoLoginPage()
+    public void gotoLoginPage()
     {
         this.getTabLogin().click();
-        return new LoginPage();
     }
 
-    public BookTicketPage gotoBookTicketPage()
+    public void gotoBookTicketPage()
     {
         this.getTabBookTicket().click();
-        return new BookTicketPage();
     }
 
-    public ContactPage gotoContactPage()
+    public void gotoContactPage()
     {
         this.getTabContact().click();
-        return new ContactPage();
     }
 
     public void clickTabLogout()
     {
         this.getTabLogout().click();
-        return;
     }
 
     public boolean checkTabLogout()

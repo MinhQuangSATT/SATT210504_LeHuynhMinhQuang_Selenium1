@@ -1,46 +1,31 @@
 package Testcases.Railway;
 
-import Common.Utilities;
 import Constant.Constant;
 import PageObjects.Railway.ContactPage;
 import PageObjects.Railway.HomePage;
 import PageObjects.Railway.LoginPage;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class TC06 {
-    @BeforeMethod
-    public void beforeMethod() {
-        System.out.println("Pre-condition");
-
-        System.setProperty("webdriver.chrome.driver", Utilities.getProjectPath()
-                + "\\Executables\\chromedriver.exe");
-        Constant.WEBDRIVER = new ChromeDriver();
-        Constant.WEBDRIVER.manage().window().maximize();
-    }
-
-    @AfterMethod
-    public void afterMethod() {
-        System.out.println("Post-condition");
-
-        Constant.WEBDRIVER.quit();
-    }
-
-    @Test
+public class TC06 extends TestBase {
+    @Test(description = "TC06 - User is redirected to Home page after logging out")
     public void TC06() {
-        System.out.println("TC06 - User is redirected to Home page after logging out");
         HomePage homePage = new HomePage();
+        LoginPage loginPage = new LoginPage();
+        ContactPage contactPage =  new ContactPage();
+
+        System.out.println("1. Navigate to QA Railway Website");
         homePage.open();
 
-        LoginPage loginPage = homePage.gotoLoginPage();
+        System.out.println("2. Login with valid Email and Password");
+        homePage.gotoLoginPage();
 
         loginPage.login(Constant.USERNAME,Constant.PASSWORD);
 
-        ContactPage contactPage = homePage.gotoContactPage();
+        System.out.println("3. Click on 'Contact' tab");
+        homePage.gotoContactPage();
 
+        System.out.println("4. Click on 'Log out' tab");
         contactPage.clickTabLogout();
 
         String checkHomePage = String.valueOf(homePage.checkHomePageTitle());

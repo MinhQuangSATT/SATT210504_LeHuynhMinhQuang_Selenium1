@@ -1,46 +1,29 @@
 package Testcases.Railway;
 
-import Common.Utilities;
 import Constant.Constant;
 import PageObjects.Railway.BookTicketPage;
 import PageObjects.Railway.HomePage;
 import PageObjects.Railway.LoginPage;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class TC04 {
-    @BeforeMethod
-    public void beforeMethod() {
-        System.out.println("Pre-condition");
-
-        System.setProperty("webdriver.chrome.driver", Utilities.getProjectPath()
-                + "\\Executables\\chromedriver.exe");
-        Constant.WEBDRIVER = new ChromeDriver();
-        Constant.WEBDRIVER.manage().window().maximize();
-    }
-
-    @AfterMethod
-    public void afterMethod() {
-        System.out.println("Post-condition");
-
-        Constant.WEBDRIVER.quit();
-    }
-
-    @Test
+public class TC04 extends TestBase {
+    @Test(description = "TC04 - User is redirected to Book ticket page after logging in")
     public void TC04() {
-        System.out.println("TC04 - User is redirected to Book ticket page after logging in");
         HomePage homePage = new HomePage();
+        LoginPage loginPage = new LoginPage();
+        BookTicketPage bookTicketPage = new BookTicketPage();
+
+        System.out.println("1. Navigate to QA Railway Website");
         homePage.open();
 
-        BookTicketPage bookTicketPage = homePage.gotoBookTicketPage();
-        LoginPage loginPage = new LoginPage();
+        System.out.println("2. Click on 'Book ticket' tab");
+        homePage.gotoBookTicketPage();
 
         String checkLoginPage = String.valueOf(loginPage.checkLoginPageTitle());
         Assert.assertEquals(checkLoginPage,"true");
 
+        System.out.println("3. Login with valid account");
         loginPage.login(Constant.USERNAME,Constant.PASSWORD);
 
         String checkBookTicketPage = String.valueOf(bookTicketPage.checkBookTicketPageTitle());
