@@ -5,7 +5,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 public class ContactPage extends GeneralPage {
-
     // Locators
 
     // Elements

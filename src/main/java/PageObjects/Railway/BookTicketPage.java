@@ -6,7 +6,6 @@ import org.openqa.selenium.WebElement;
 
 
 public class BookTicketPage extends GeneralPage {
-
     // Locators
     private final By frmBookTicketForm = By.xpath("//fieldset");
 

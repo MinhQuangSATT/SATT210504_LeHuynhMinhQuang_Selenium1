@@ -5,7 +5,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 public class LoginPage extends GeneralPage{
-
     // Locators
     private final By txtUsername = By.id("username");
     private final By txtPassword = By.id("password");

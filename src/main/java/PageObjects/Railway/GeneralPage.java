@@ -7,7 +7,6 @@ import org.openqa.selenium.WebElement;
 import Constant.Constant;
 
 public class GeneralPage {
-
     // Locators
     private final By tabLogin = By.xpath("//div[@id='menu']//a[@href='/Account/Login.cshtml']");
     private final By tabLogout = By.xpath("//div[@id='menu']//a[@href='/Account/Logout']");
@@ -15,6 +14,8 @@ public class GeneralPage {
     private final By lblWelcomeMessage = By.xpath("//div[@class='account']/strong");
     private final By tabContact = By.xpath("//div[@id='menu']//a[@href='/Page/Contact.cshtml']");
     private final By lblPageTitle = By.xpath("//h1[@align='center']");
+    private final By tabRegister = By.xpath("//div[@id='menu']//a[@href='/Account/Register.cshtml']");
+    private final By tabChangePassword = By.xpath("//div[@id='menu']//a[@href='/Account/ChangePassword.cshtml']");
 
     // Elements
     protected WebElement getTabLogin() {
@@ -34,6 +35,10 @@ public class GeneralPage {
     protected WebElement getTabContact() { return Constant.WEBDRIVER.findElement(tabContact); }
 
     public WebElement getLabelPageTitle() { return Constant.WEBDRIVER.findElement(lblPageTitle); }
+
+    protected WebElement getTabRegister() { return Constant.WEBDRIVER.findElement(tabRegister); }
+
+    protected WebElement getTabChangePassword() { return Constant.WEBDRIVER.findElement(tabChangePassword); }
 
     // Methods
     public String getWelcomeMessage()
@@ -59,6 +64,16 @@ public class GeneralPage {
     public void clickTabLogout()
     {
         this.getTabLogout().click();
+    }
+
+    public void gotoRegisterPage()
+    {
+        this.getTabRegister().click();
+    }
+
+    public void gotoChangePassword()
+    {
+        this.getTabChangePassword().click();
     }
 
     public boolean checkTabLogout()
