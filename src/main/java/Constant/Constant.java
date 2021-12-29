@@ -29,7 +29,7 @@ public class Constant {
     public static final String REGISTER_RANDOM_EMAIL ()
     {
         int n = 10;
-        return getAlphaNumericString(n)+"email.com";
+        return getAlphaNumericString(n)+"@email.com";
     }
     public static final String REGISTER_PASSWORD = "123456789";
     public static final String REGISTER_CONFIRM_PASSWORD = "123456789";

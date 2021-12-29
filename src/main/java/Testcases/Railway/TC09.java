@@ -33,6 +33,10 @@ public class TC09 extends TestBase {
         String actualMessage = changePasswordPage.getChangePasswordErrorMessage();
         String expectedMessage = "Password change failed. Please correct the errors and try again.";
 
+        String actualConfirmPasswordValidationMessage = changePasswordPage.getConfirmPasswordValidationErrorMessage();
+        String expectedConfirmPasswordValidationMessage = "The password confirmation does not match the new password.";
+
         Assert.assertEquals(actualMessage,expectedMessage,"Error message is not displayed as expected");
+        Assert.assertEquals(actualConfirmPasswordValidationMessage,expectedConfirmPasswordValidationMessage,"Confirm password validation error message is not displayed as expected");
     }
 }

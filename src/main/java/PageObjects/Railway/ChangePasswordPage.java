@@ -11,6 +11,7 @@ public class ChangePasswordPage {
     private final By txtConfirmPassword = By.id("confirmPassword");
     private final By btnChangePassword = By.xpath("//input[@value='Change Password']");
     private final By lblChangePasswordErrorMsg = By.xpath("//p[@class='message error']");
+    private final By lblConfirmPasswordValidationErrorMsg = By.xpath("//label[@for='confirmPassword' and @class='validation-error']");
 
     // Elements
     public WebElement getTextCurrentPassword()
@@ -32,6 +33,8 @@ public class ChangePasswordPage {
 
     public WebElement getLabelChangePasswordErrorMessage() { return Constant.WEBDRIVER.findElement(lblChangePasswordErrorMsg); }
 
+    public WebElement getLabelConfirmPasswordValidationErrorMessage() { return Constant.WEBDRIVER.findElement(lblConfirmPasswordValidationErrorMsg); }
+
     // Methods
     public void changePassword(String currentpassword,String newpassword,String confirmpassword)
     {
@@ -45,5 +48,10 @@ public class ChangePasswordPage {
     public String getChangePasswordErrorMessage()
     {
         return this.getLabelChangePasswordErrorMessage().getText();
+    }
+
+    public String getConfirmPasswordValidationErrorMessage()
+    {
+        return this.getLabelConfirmPasswordValidationErrorMessage().getText();
     }
 }
