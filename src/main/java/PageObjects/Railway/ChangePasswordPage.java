@@ -36,12 +36,12 @@ public class ChangePasswordPage {
     public WebElement getLabelConfirmPasswordValidationErrorMessage() { return Constant.WEBDRIVER.findElement(lblConfirmPasswordValidationErrorMsg); }
 
     // Methods
-    public void changePassword(String currentpassword,String newpassword,String confirmpassword)
+    public void changePassword(String currentPassword,String newPassword,String confirmPassword)
     {
         //Submit register credentials
-        this.getTextCurrentPassword().sendKeys(currentpassword);
-        this.getTextNewPassword().sendKeys(newpassword);
-        this.getTextConfirmPassword().sendKeys(confirmpassword);
+        this.getTextCurrentPassword().sendKeys(currentPassword);
+        this.getTextNewPassword().sendKeys(newPassword);
+        this.getTextConfirmPassword().sendKeys(confirmPassword);
         this.getButtonChangePassword().click();
     }
 

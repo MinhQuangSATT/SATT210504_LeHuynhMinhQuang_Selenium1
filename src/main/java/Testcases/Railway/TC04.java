@@ -20,16 +20,14 @@ public class TC04 extends TestBase {
         System.out.println("2. Click on 'Book ticket' tab");
         homePage.gotoBookTicketPage();
 
-        String checkLoginPage = String.valueOf(loginPage.checkLoginPageTitle());
-        Assert.assertEquals(checkLoginPage,"true");
+        Assert.assertEquals(loginPage.getLoginPageTitle(),"Login Page");
 
         System.out.println("3. Login with valid account");
         loginPage.login(Constant.USERNAME,Constant.PASSWORD);
 
-        String checkBookTicketPage = String.valueOf(bookTicketPage.checkBookTicketPageTitle());
         String checkBookTicketForm = String.valueOf(bookTicketPage.checkBookTicketForm());
 
-        Assert.assertEquals(checkBookTicketPage,"true");
+        Assert.assertEquals(bookTicketPage.getBookTicketPageTitle(),"Book ticket");
         Assert.assertEquals(checkBookTicketForm,"true");
     }
 }

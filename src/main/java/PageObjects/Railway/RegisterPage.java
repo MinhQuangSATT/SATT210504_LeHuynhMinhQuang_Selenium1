@@ -2,6 +2,7 @@ package PageObjects.Railway;
 
 import Constant.Constant;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
 public class RegisterPage {
@@ -63,13 +64,16 @@ public class RegisterPage {
     }
 
     // Methods
-    public void register(String username,String password,String confirmpassword ,String pid)
+    public void register(String username,String password,String confirmPassword ,String pid)
     {
-        //Submit register credentials
         this.getTextEmail().sendKeys(username);
         this.getTextPassword().sendKeys(password);
-        this.getTextConfirmPassword().sendKeys(confirmpassword);
+        this.getTextConfirmPassword().sendKeys(confirmPassword);
         this.getTextPID().sendKeys(pid);
+
+        JavascriptExecutor js = (JavascriptExecutor)Constant.WEBDRIVER;
+        js.executeScript("window.scrollBy(0,350)", "");
+
         this.getButtonRegister().click();
     }
 

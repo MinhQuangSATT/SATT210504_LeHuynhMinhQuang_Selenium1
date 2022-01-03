@@ -2,7 +2,7 @@ package PageObjects.Railway;
 
 import Constant.Constant;
 
-public class HomePage extends  GeneralPage{
+public class HomePage extends  GeneralPage {
     // Locators
 
     // Elements
@@ -14,9 +14,8 @@ public class HomePage extends  GeneralPage{
         Constant.WEBDRIVER.navigate().to(Constant.RAILWAY_URL);
     }
 
-    public boolean checkHomePageTitle()
+    public String getHomePageTitle()
     {
-        String title = "Welcome to Safe Railway";
-        return this.getLabelPageTitle().getText().equals(title);
+        return this.getLabelPageTitle().getText();
     }
 }

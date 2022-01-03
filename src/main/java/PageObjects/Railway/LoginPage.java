@@ -8,7 +8,7 @@ public class LoginPage extends GeneralPage{
     // Locators
     private final By txtUsername = By.id("username");
     private final By txtPassword = By.id("password");
-    private final By btnLogin = By.xpath("//input[@value='login']");
+    private final By btnLogin = By.xpath("//input[@value='Login']");
     private final By lblLoginErrorMsg = By.xpath("//p[@class='message error LoginForm']");
 
     // Elements
@@ -46,18 +46,17 @@ public class LoginPage extends GeneralPage{
         return this.getLabelLoginErrorMessage().getText();
     }
 
-    public boolean checkLoginPageTitle()
+    public String getLoginPageTitle()
     {
-        String title = "Login page";
-        return this.getLabelPageTitle().getText().equals(title);
+        return this.getLabelPageTitle().getText();
     }
 
     public void loginMultipleTimes(String username,String password,int number)
     {
-        this.login(username,password);
-        for(int i = 1;i <= number-1;i++)
+        for(int index = 1;index <= number;index++)
         {
-            this.login("",password);
+            this.login(username,password);
+            this.getTextUsername().clear();
         }
     }
 }

@@ -1,6 +1,6 @@
 package Testcases.Railway;
 
-import Constant.Constant;
+import Common.Utilities;
 import PageObjects.Railway.HomePage;
 import PageObjects.Railway.RegisterPage;
 import org.testng.Assert;
@@ -20,7 +20,7 @@ public class TC11 extends TestBase {
 
         System.out.println("3. Enter valid email address and leave other fields empty");
         System.out.println("4. Click on 'Register' button");
-        registerPage.register(Constant.REGISTER_RANDOM_EMAIL(),"","","");
+        registerPage.register(Utilities.REGISTER_RANDOM_EMAIL(),"","","");
 
         String actualErrorMessage = registerPage.getRegisterErrorMessage();
         String actualPasswordValidationErrorMessage = registerPage.getPasswordValidationErrorMessage();

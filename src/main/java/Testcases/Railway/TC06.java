@@ -28,10 +28,8 @@ public class TC06 extends TestBase {
         System.out.println("4. Click on 'Log out' tab");
         contactPage.clickTabLogout();
 
-        String checkHomePage = String.valueOf(homePage.checkHomePageTitle());
-        Assert.assertEquals(checkHomePage,"true");
+        Assert.assertEquals(homePage.getHomePageTitle(),"Welcome to Safe Railway");
 
-        String checkTabLogout = String.valueOf(homePage.checkTabLogout());
-        Assert.assertEquals(checkTabLogout,"false");
+        Assert.assertFalse(homePage.isTabLogout());
     }
 }

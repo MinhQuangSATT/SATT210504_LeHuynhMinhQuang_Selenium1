@@ -10,9 +10,8 @@ public class ContactPage extends GeneralPage {
     // Elements
 
     // Methods
-    public boolean checkContactPageTitle()
+    public String getContactPageTitle()
     {
-        String title = "Contact Information";
-        return this.getLabelPageTitle().getText().equals(title);
+        return this.getLabelPageTitle().getText();
     }
 }

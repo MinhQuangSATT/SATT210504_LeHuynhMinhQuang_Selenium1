@@ -16,6 +16,8 @@ public class GeneralPage {
     private final By lblPageTitle = By.xpath("//h1[@align='center']");
     private final By tabRegister = By.xpath("//div[@id='menu']//a[@href='/Account/Register.cshtml']");
     private final By tabChangePassword = By.xpath("//div[@id='menu']//a[@href='/Account/ChangePassword.cshtml']");
+    private final By tabMyTicket = By.xpath("//div[@id='menu']//a[@href='/Page/ManageTicket.cshtml']");
+    private final By tabTimetable = By.xpath("//div[@id='menu']//a[@href='TrainTimeListPage.cshtml']");
 
     // Elements
     protected WebElement getTabLogin() {
@@ -34,11 +36,15 @@ public class GeneralPage {
 
     protected WebElement getTabContact() { return Constant.WEBDRIVER.findElement(tabContact); }
 
-    public WebElement getLabelPageTitle() { return Constant.WEBDRIVER.findElement(lblPageTitle); }
+    protected WebElement getLabelPageTitle() { return Constant.WEBDRIVER.findElement(lblPageTitle); }
 
     protected WebElement getTabRegister() { return Constant.WEBDRIVER.findElement(tabRegister); }
 
     protected WebElement getTabChangePassword() { return Constant.WEBDRIVER.findElement(tabChangePassword); }
+
+    protected WebElement getTabMyTicket() { return Constant.WEBDRIVER.findElement(tabMyTicket); }
+
+    protected WebElement getTabTimeTable() { return Constant.WEBDRIVER.findElement(tabTimetable); }
 
     // Methods
     public String getWelcomeMessage()
@@ -76,12 +82,19 @@ public class GeneralPage {
         this.getTabChangePassword().click();
     }
 
-    public boolean checkTabLogout()
+    public void gotoMyTicket()
+    {
+        this.getTabMyTicket().click();
+    }
+
+    public void gotoTimetable() { this.getTabTimeTable().click(); }
+
+    public boolean isTabLogout()
     {
         try
         {
-            Constant.WEBDRIVER.findElement(tabLogout);
-            return true;
+            boolean isDisplayed = getTabLogout().isDisplayed();
+            return isDisplayed;
         }
         catch (NoSuchElementException e) {
             return false;
