@@ -25,6 +25,6 @@ public class Utilities {
     public static final String REGISTER_RANDOM_EMAIL ()
     {
         int n = 10;
-        return getAlphaNumericString(n)+"@email.com";
+        return java.time.LocalTime.now()+getAlphaNumericString(n)+"@email.com";
     }
 }
