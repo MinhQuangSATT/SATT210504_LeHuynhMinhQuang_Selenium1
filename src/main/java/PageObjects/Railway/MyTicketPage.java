@@ -11,7 +11,7 @@ public class MyTicketPage extends GeneralPage {
     String btnCancel = "//td[text()='%s']/following-sibling::td[text()='%s']/following-sibling::td[text()='%s']/following-sibling::td[text()='%s']/following-sibling::td[text()='%s']/../td/input[@value='Cancel']";
 
     // Elements
-    public WebElement getButtonCancel(String departDate, String departStation, String arriveStation, String seatType,int ticketAmount)
+    protected WebElement getButtonCancel(String departDate, String departStation, String arriveStation, String seatType,int ticketAmount)
     {
         return Constant.WEBDRIVER.findElement(By.xpath(String.format(btnCancel,departStation,arriveStation,seatType,departDate,String.valueOf(ticketAmount))));
     }

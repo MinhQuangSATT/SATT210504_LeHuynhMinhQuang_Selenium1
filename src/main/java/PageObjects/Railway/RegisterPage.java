@@ -18,47 +18,47 @@ public class RegisterPage {
     private final By lblPIDValidationErrorMsg = By.xpath("//label[@for='pid' and @class='validation-error']");
 
     // Elements
-    public WebElement getTextEmail()
+    protected WebElement getTextEmail()
     {
         return Constant.WEBDRIVER.findElement(txtEmail);
     }
 
-    public WebElement getTextPassword()
+    protected WebElement getTextPassword()
     {
         return Constant.WEBDRIVER.findElement(txtPassword);
     }
 
-    public WebElement getTextConfirmPassword()
+    protected WebElement getTextConfirmPassword()
     {
         return Constant.WEBDRIVER.findElement(txtConfirmPassword);
     }
 
-    public WebElement getTextPID()
+    protected WebElement getTextPID()
     {
         return Constant.WEBDRIVER.findElement(txtPID);
     }
 
-    public WebElement getButtonRegister()
+    protected WebElement getButtonRegister()
     {
         return Constant.WEBDRIVER.findElement(btnRegister);
     }
 
-    public WebElement getLabelRegisterErrorMessage()
+    protected WebElement getLabelRegisterErrorMessage()
     {
         return Constant.WEBDRIVER.findElement(lblRegisterErrorMsg);
     }
 
-    public WebElement getLabelRegisterSuccessMessage()
+    protected WebElement getLabelRegisterSuccessMessage()
     {
         return Constant.WEBDRIVER.findElement(lblRegisterSuccessMsg);
     }
 
-    public WebElement getLabelPasswordValidationErrorMessage()
+    protected WebElement getLabelPasswordValidationErrorMessage()
     {
         return Constant.WEBDRIVER.findElement(lblPasswordValidationErrorMsg);
     }
 
-    public WebElement getLabelPIDValidationErrorMessage()
+    protected WebElement getLabelPIDValidationErrorMessage()
     {
         return Constant.WEBDRIVER.findElement(lblPIDValidationErrorMsg);
     }

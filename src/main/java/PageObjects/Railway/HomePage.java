@@ -8,7 +8,6 @@ public class HomePage extends  GeneralPage {
     // Elements
 
     // Methods
-
     public void open()
     {
         Constant.WEBDRIVER.navigate().to(Constant.RAILWAY_URL);

@@ -14,26 +14,26 @@ public class ChangePasswordPage {
     private final By lblConfirmPasswordValidationErrorMsg = By.xpath("//label[@for='confirmPassword' and @class='validation-error']");
 
     // Elements
-    public WebElement getTextCurrentPassword()
+    protected WebElement getTextCurrentPassword()
     {
         return Constant.WEBDRIVER.findElement(txtCurrentPassword);
     }
 
-    public WebElement getTextNewPassword()
+    protected WebElement getTextNewPassword()
     {
         return Constant.WEBDRIVER.findElement(txtNewPassword);
     }
 
-    public WebElement getTextConfirmPassword() { return Constant.WEBDRIVER.findElement(txtConfirmPassword); }
+    protected WebElement getTextConfirmPassword() { return Constant.WEBDRIVER.findElement(txtConfirmPassword); }
 
-    public WebElement getButtonChangePassword()
+    protected WebElement getButtonChangePassword()
     {
         return Constant.WEBDRIVER.findElement(btnChangePassword);
     }
 
-    public WebElement getLabelChangePasswordErrorMessage() { return Constant.WEBDRIVER.findElement(lblChangePasswordErrorMsg); }
+    protected WebElement getLabelChangePasswordErrorMessage() { return Constant.WEBDRIVER.findElement(lblChangePasswordErrorMsg); }
 
-    public WebElement getLabelConfirmPasswordValidationErrorMessage() { return Constant.WEBDRIVER.findElement(lblConfirmPasswordValidationErrorMsg); }
+    protected WebElement getLabelConfirmPasswordValidationErrorMessage() { return Constant.WEBDRIVER.findElement(lblConfirmPasswordValidationErrorMsg); }
 
     // Methods
     public void changePassword(String currentPassword,String newPassword,String confirmPassword)

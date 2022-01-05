@@ -10,7 +10,7 @@ public class TimetablePage extends GeneralPage {
     String lnkCheckPrice = "//td[text()='%s']/following-sibling::td[text()='%s']/../td[count(//th[text()='Check Price']/preceding-sibling::th)+1]/a";
 
     // Elements
-    public WebElement getLinkCheckPrice(String departStation, String arriveStation){
+    protected WebElement getLinkCheckPrice(String departStation, String arriveStation){
         return Constant.WEBDRIVER.findElement(By.xpath(String.format(lnkCheckPrice, departStation, arriveStation)));
     }
 

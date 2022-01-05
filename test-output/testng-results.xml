@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="5" ignored="0" total="14" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="All Test Suite" duration-ms="106317" started-at="2022-01-05T13:37:29 ICT" finished-at="2022-01-05T13:39:15 ICT">
+  <suite name="All Test Suite" duration-ms="116756" started-at="2022-01-05T18:33:24 ICT" finished-at="2022-01-05T18:35:21 ICT">
     <groups>
     </groups>
-    <test name="TestSuite" duration-ms="106317" started-at="2022-01-05T13:37:29 ICT" finished-at="2022-01-05T13:39:15 ICT">
+    <test name="TestSuite" duration-ms="116756" started-at="2022-01-05T18:33:24 ICT" finished-at="2022-01-05T18:35:21 ICT">
       <class name="Testcases.Railway.TC07">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Testcases.Railway.TC07@18eed359]" name="beforeMethod" is-config="true" duration-ms="1176" started-at="2022-01-05T13:38:09 ICT" finished-at="2022-01-05T13:38:10 ICT">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Testcases.Railway.TC07@18eed359]" name="beforeMethod" is-config="true" duration-ms="1251" started-at="2022-01-05T18:34:11 ICT" finished-at="2022-01-05T18:34:13 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="TC07()[pri:0, instance:Testcases.Railway.TC07@18eed359]" name="TC07" duration-ms="4759" started-at="2022-01-05T13:38:10 ICT" description="TC07 - User can create new account" finished-at="2022-01-05T13:38:15 ICT">
+        <test-method status="FAIL" signature="TC07()[pri:0, instance:Testcases.Railway.TC07@18eed359]" name="TC07" duration-ms="4171" started-at="2022-01-05T18:34:13 ICT" description="TC07 - User can create new account" finished-at="2022-01-05T18:34:17 ICT">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Successful register message is not displayed as expected expected [Thank you for registering your account] but found [You're here]]]>
@@ -45,17 +45,17 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC07 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Testcases.Railway.TC07@18eed359]" name="afterMethod" is-config="true" duration-ms="605" started-at="2022-01-05T13:38:15 ICT" finished-at="2022-01-05T13:38:15 ICT">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Testcases.Railway.TC07@18eed359]" name="afterMethod" is-config="true" duration-ms="600" started-at="2022-01-05T18:34:17 ICT" finished-at="2022-01-05T18:34:17 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- Testcases.Railway.TC07 -->
       <class name="Testcases.Railway.TC09">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Testcases.Railway.TC09@6c3708b3]" name="beforeMethod" is-config="true" duration-ms="1258" started-at="2022-01-05T13:38:15 ICT" finished-at="2022-01-05T13:38:17 ICT">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Testcases.Railway.TC09@6c3708b3]" name="beforeMethod" is-config="true" duration-ms="1211" started-at="2022-01-05T18:34:17 ICT" finished-at="2022-01-05T18:34:19 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC09(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Testcases.Railway.TC09@6c3708b3]" name="TC09" duration-ms="6983" started-at="2022-01-05T13:38:17 ICT" description="TC09 - User can&#039;t change password when &#039;New Password&#039; and &#039;Confirm Password&#039; are different." data-provider="data-provider" finished-at="2022-01-05T13:38:24 ICT">
+        <test-method status="PASS" signature="TC09(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Testcases.Railway.TC09@6c3708b3]" name="TC09" duration-ms="5930" started-at="2022-01-05T18:34:19 ICT" description="TC09 - User can&#039;t change password when &#039;New Password&#039; and &#039;Confirm Password&#039; are different." data-provider="data-provider" finished-at="2022-01-05T18:34:25 ICT">
           <params>
             <param index="0">
               <value>
@@ -76,58 +76,17 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC09 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Testcases.Railway.TC09@6c3708b3]" name="afterMethod" is-config="true" duration-ms="593" started-at="2022-01-05T13:38:24 ICT" finished-at="2022-01-05T13:38:24 ICT">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Testcases.Railway.TC09@6c3708b3]" name="afterMethod" is-config="true" duration-ms="588" started-at="2022-01-05T18:34:25 ICT" finished-at="2022-01-05T18:34:25 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- Testcases.Railway.TC09 -->
-      <class name="Testcases.Railway.TC14">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Testcases.Railway.TC14@67784306]" name="beforeMethod" is-config="true" duration-ms="1237" started-at="2022-01-05T13:38:35 ICT" finished-at="2022-01-05T13:38:36 ICT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC14(java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)[pri:0, instance:Testcases.Railway.TC14@67784306]" name="TC14" duration-ms="7352" started-at="2022-01-05T13:38:36 ICT" description="User can book many tickets at a time" data-provider="data-provider" finished-at="2022-01-05T13:38:44 ICT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[1/16/2022]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Nha Trang]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Sài Gòn]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Soft seat with air conditioner]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[5]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC14 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Testcases.Railway.TC14@67784306]" name="afterMethod" is-config="true" duration-ms="628" started-at="2022-01-05T13:38:44 ICT" finished-at="2022-01-05T13:38:44 ICT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- Testcases.Railway.TC14 -->
       <class name="Testcases.Railway.TC03">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Testcases.Railway.TC03@63753b6d]" name="beforeMethod" is-config="true" duration-ms="1149" started-at="2022-01-05T13:37:41 ICT" finished-at="2022-01-05T13:37:42 ICT">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Testcases.Railway.TC03@63753b6d]" name="beforeMethod" is-config="true" duration-ms="1166" started-at="2022-01-05T18:33:39 ICT" finished-at="2022-01-05T18:33:41 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="TC03()[pri:0, instance:Testcases.Railway.TC03@63753b6d]" name="TC03" duration-ms="3496" started-at="2022-01-05T13:37:42 ICT" description="TC03 - User can not log into Railway with invalid password" finished-at="2022-01-05T13:37:46 ICT">
+        <test-method status="FAIL" signature="TC03()[pri:0, instance:Testcases.Railway.TC03@63753b6d]" name="TC03" duration-ms="5689" started-at="2022-01-05T18:33:41 ICT" description="TC03 - User can not log into Railway with invalid password" finished-at="2022-01-05T18:33:46 ICT">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [There was a problem with your login and/or errors exist in your form.] but found [Invalid username or password. Please try again.]]]>
@@ -162,31 +121,72 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC03 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Testcases.Railway.TC03@63753b6d]" name="afterMethod" is-config="true" duration-ms="591" started-at="2022-01-05T13:37:46 ICT" finished-at="2022-01-05T13:37:46 ICT">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Testcases.Railway.TC03@63753b6d]" name="afterMethod" is-config="true" duration-ms="609" started-at="2022-01-05T18:33:46 ICT" finished-at="2022-01-05T18:33:47 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- Testcases.Railway.TC03 -->
-      <class name="Testcases.Railway.TC04">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Testcases.Railway.TC04@6b09bb57]" name="beforeMethod" is-config="true" duration-ms="1227" started-at="2022-01-05T13:37:46 ICT" finished-at="2022-01-05T13:37:48 ICT">
+      <class name="Testcases.Railway.TC14">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Testcases.Railway.TC14@67784306]" name="beforeMethod" is-config="true" duration-ms="1135" started-at="2022-01-05T18:34:36 ICT" finished-at="2022-01-05T18:34:37 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC04()[pri:0, instance:Testcases.Railway.TC04@6b09bb57]" name="TC04" duration-ms="4319" started-at="2022-01-05T13:37:48 ICT" description="TC04 - User is redirected to Book ticket page after logging in" finished-at="2022-01-05T13:37:52 ICT">
+        <test-method status="PASS" signature="TC14(java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)[pri:0, instance:Testcases.Railway.TC14@67784306]" name="TC14" duration-ms="8543" started-at="2022-01-05T18:34:37 ICT" description="User can book many tickets at a time" data-provider="data-provider" finished-at="2022-01-05T18:34:46 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1/16/2022]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Nha Trang]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Sài Gòn]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Soft seat with air conditioner]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC14 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Testcases.Railway.TC14@67784306]" name="afterMethod" is-config="true" duration-ms="622" started-at="2022-01-05T18:34:46 ICT" finished-at="2022-01-05T18:34:46 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- Testcases.Railway.TC14 -->
+      <class name="Testcases.Railway.TC04">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Testcases.Railway.TC04@6b09bb57]" name="beforeMethod" is-config="true" duration-ms="1273" started-at="2022-01-05T18:33:47 ICT" finished-at="2022-01-05T18:33:48 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC04()[pri:0, instance:Testcases.Railway.TC04@6b09bb57]" name="TC04" duration-ms="5257" started-at="2022-01-05T18:33:48 ICT" description="TC04 - User is redirected to Book ticket page after logging in" finished-at="2022-01-05T18:33:53 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC04 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Testcases.Railway.TC04@6b09bb57]" name="afterMethod" is-config="true" duration-ms="599" started-at="2022-01-05T13:37:52 ICT" finished-at="2022-01-05T13:37:53 ICT">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Testcases.Railway.TC04@6b09bb57]" name="afterMethod" is-config="true" duration-ms="609" started-at="2022-01-05T18:33:53 ICT" finished-at="2022-01-05T18:33:54 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- Testcases.Railway.TC04 -->
       <class name="Testcases.Railway.TC15">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Testcases.Railway.TC15@335eadca]" name="beforeMethod" is-config="true" duration-ms="1233" started-at="2022-01-05T13:38:44 ICT" finished-at="2022-01-05T13:38:46 ICT">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Testcases.Railway.TC15@335eadca]" name="beforeMethod" is-config="true" duration-ms="1233" started-at="2022-01-05T18:34:46 ICT" finished-at="2022-01-05T18:34:48 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="TC15(java.lang.String,java.lang.String,int,int,int,int,int,int)[pri:0, instance:Testcases.Railway.TC15@335eadca]" name="TC15" duration-ms="5742" started-at="2022-01-05T13:38:46 ICT" description="&#039;Ticket price&#039; page displays with ticket details after clicking on &#039;check price&#039; link in &#039;Train timetable&#039; page" data-provider="data-provider" finished-at="2022-01-05T13:38:51 ICT">
+        <test-method status="FAIL" signature="TC15(java.lang.String,java.lang.String,int,int,int,int,int,int)[pri:0, instance:Testcases.Railway.TC15@335eadca]" name="TC15" duration-ms="5585" started-at="2022-01-05T18:34:48 ICT" description="&#039;Ticket price&#039; page displays with ticket details after clicking on &#039;check price&#039; link in &#039;Train timetable&#039; page" data-provider="data-provider" finished-at="2022-01-05T18:34:53 ICT">
           <params>
             <param index="0">
               <value>
@@ -263,17 +263,58 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC15 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Testcases.Railway.TC15@335eadca]" name="afterMethod" is-config="true" duration-ms="610" started-at="2022-01-05T13:38:51 ICT" finished-at="2022-01-05T13:38:52 ICT">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Testcases.Railway.TC15@335eadca]" name="afterMethod" is-config="true" duration-ms="612" started-at="2022-01-05T18:34:53 ICT" finished-at="2022-01-05T18:34:54 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- Testcases.Railway.TC15 -->
-      <class name="Testcases.Railway.TC05">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Testcases.Railway.TC05@6536e911]" name="beforeMethod" is-config="true" duration-ms="1185" started-at="2022-01-05T13:37:53 ICT" finished-at="2022-01-05T13:37:54 ICT">
+      <class name="Testcases.Railway.TC16">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Testcases.Railway.TC16@210366b4]" name="beforeMethod" is-config="true" duration-ms="1143" started-at="2022-01-05T18:34:54 ICT" finished-at="2022-01-05T18:34:55 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="TC05()[pri:0, instance:Testcases.Railway.TC05@6536e911]" name="TC05" duration-ms="6455" started-at="2022-01-05T13:37:54 ICT" description="TC05 - System shows message when user enter wrong password several times" finished-at="2022-01-05T13:38:00 ICT">
+        <test-method status="PASS" signature="TC16(java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)[pri:0, instance:Testcases.Railway.TC16@210366b4]" name="TC16" duration-ms="12010" started-at="2022-01-05T18:34:55 ICT" description="User can cancel a ticket" data-provider="data-provider" finished-at="2022-01-05T18:35:07 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1/16/2022]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Phan Thiết]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Sài Gòn]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Soft seat]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC16 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Testcases.Railway.TC16@210366b4]" name="afterMethod" is-config="true" duration-ms="621" started-at="2022-01-05T18:35:07 ICT" finished-at="2022-01-05T18:35:07 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- Testcases.Railway.TC16 -->
+      <class name="Testcases.Railway.TC05">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Testcases.Railway.TC05@6536e911]" name="beforeMethod" is-config="true" duration-ms="1330" started-at="2022-01-05T18:33:54 ICT" finished-at="2022-01-05T18:33:55 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="TC05()[pri:0, instance:Testcases.Railway.TC05@6536e911]" name="TC05" duration-ms="6311" started-at="2022-01-05T18:33:55 ICT" description="TC05 - System shows message when user enter wrong password several times" finished-at="2022-01-05T18:34:02 ICT">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [You have used 4 out of 5 login attempts.After all 5 have been used, you will be unable to login for 15 minutes.] but found [Invalid username or password. Please try again.]]]>
@@ -308,72 +349,17 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC05 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Testcases.Railway.TC05@6536e911]" name="afterMethod" is-config="true" duration-ms="617" started-at="2022-01-05T13:38:00 ICT" finished-at="2022-01-05T13:38:01 ICT">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Testcases.Railway.TC05@6536e911]" name="afterMethod" is-config="true" duration-ms="613" started-at="2022-01-05T18:34:02 ICT" finished-at="2022-01-05T18:34:02 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- Testcases.Railway.TC05 -->
-      <class name="Testcases.Railway.TC16">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Testcases.Railway.TC16@210366b4]" name="beforeMethod" is-config="true" duration-ms="1166" started-at="2022-01-05T13:38:52 ICT" finished-at="2022-01-05T13:38:53 ICT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC16(java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)[pri:0, instance:Testcases.Railway.TC16@210366b4]" name="TC16" duration-ms="9370" started-at="2022-01-05T13:38:53 ICT" description="User can cancel a ticket" data-provider="data-provider" finished-at="2022-01-05T13:39:03 ICT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[1/16/2022]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Phan Thiết]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Sài Gòn]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Soft seat]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC16 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Testcases.Railway.TC16@210366b4]" name="afterMethod" is-config="true" duration-ms="616" started-at="2022-01-05T13:39:03 ICT" finished-at="2022-01-05T13:39:03 ICT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- Testcases.Railway.TC16 -->
-      <class name="Testcases.Railway.TC06">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Testcases.Railway.TC06@520a3426]" name="beforeMethod" is-config="true" duration-ms="1141" started-at="2022-01-05T13:38:01 ICT" finished-at="2022-01-05T13:38:02 ICT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC06()[pri:0, instance:Testcases.Railway.TC06@520a3426]" name="TC06" duration-ms="6259" started-at="2022-01-05T13:38:02 ICT" description="TC06 - User is redirected to Home page after logging out" finished-at="2022-01-05T13:38:08 ICT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC06 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Testcases.Railway.TC06@520a3426]" name="afterMethod" is-config="true" duration-ms="594" started-at="2022-01-05T13:38:08 ICT" finished-at="2022-01-05T13:38:09 ICT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- Testcases.Railway.TC06 -->
       <class name="Testcases.Railway.TC17">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Testcases.Railway.TC17@eec5a4a]" name="beforeMethod" is-config="true" duration-ms="1146" started-at="2022-01-05T13:39:03 ICT" finished-at="2022-01-05T13:39:04 ICT">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Testcases.Railway.TC17@eec5a4a]" name="beforeMethod" is-config="true" duration-ms="1140" started-at="2022-01-05T18:35:07 ICT" finished-at="2022-01-05T18:35:09 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC17(java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)[pri:0, instance:Testcases.Railway.TC17@eec5a4a]" name="TC17" duration-ms="9935" started-at="2022-01-05T13:39:04 ICT" description="User can&#039;t book more than 10 tickets" data-provider="data-provider" finished-at="2022-01-05T13:39:14 ICT">
+        <test-method status="PASS" signature="TC17(java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)[pri:0, instance:Testcases.Railway.TC17@eec5a4a]" name="TC17" duration-ms="11979" started-at="2022-01-05T18:35:09 ICT" description="User can&#039;t book more than 10 tickets" data-provider="data-provider" finished-at="2022-01-05T18:35:21 ICT">
           <params>
             <param index="0">
               <value>
@@ -429,45 +415,59 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC17 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Testcases.Railway.TC17@eec5a4a]" name="afterMethod" is-config="true" duration-ms="621" started-at="2022-01-05T13:39:14 ICT" finished-at="2022-01-05T13:39:15 ICT">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Testcases.Railway.TC17@eec5a4a]" name="afterMethod" is-config="true" duration-ms="629" started-at="2022-01-05T18:35:21 ICT" finished-at="2022-01-05T18:35:21 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- Testcases.Railway.TC17 -->
-      <class name="Testcases.Railway.TC10">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Testcases.Railway.TC10@6f1fba17]" name="beforeMethod" is-config="true" duration-ms="1122" started-at="2022-01-05T13:38:24 ICT" finished-at="2022-01-05T13:38:25 ICT">
+      <class name="Testcases.Railway.TC06">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Testcases.Railway.TC06@520a3426]" name="beforeMethod" is-config="true" duration-ms="1154" started-at="2022-01-05T18:34:02 ICT" finished-at="2022-01-05T18:34:03 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC10()[pri:0, instance:Testcases.Railway.TC10@6f1fba17]" name="TC10" duration-ms="3822" started-at="2022-01-05T13:38:25 ICT" description="TC10 - User can&#039;t create account with an already in-use email" finished-at="2022-01-05T13:38:29 ICT">
+        <test-method status="PASS" signature="TC06()[pri:0, instance:Testcases.Railway.TC06@520a3426]" name="TC06" duration-ms="7382" started-at="2022-01-05T18:34:03 ICT" description="TC06 - User is redirected to Home page after logging out" finished-at="2022-01-05T18:34:11 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC06 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Testcases.Railway.TC06@520a3426]" name="afterMethod" is-config="true" duration-ms="604" started-at="2022-01-05T18:34:11 ICT" finished-at="2022-01-05T18:34:11 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- Testcases.Railway.TC06 -->
+      <class name="Testcases.Railway.TC10">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Testcases.Railway.TC10@6f1fba17]" name="beforeMethod" is-config="true" duration-ms="1232" started-at="2022-01-05T18:34:25 ICT" finished-at="2022-01-05T18:34:26 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC10()[pri:0, instance:Testcases.Railway.TC10@6f1fba17]" name="TC10" duration-ms="3587" started-at="2022-01-05T18:34:26 ICT" description="TC10 - User can&#039;t create account with an already in-use email" finished-at="2022-01-05T18:34:30 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC10 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Testcases.Railway.TC10@6f1fba17]" name="afterMethod" is-config="true" duration-ms="613" started-at="2022-01-05T13:38:29 ICT" finished-at="2022-01-05T13:38:30 ICT">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Testcases.Railway.TC10@6f1fba17]" name="afterMethod" is-config="true" duration-ms="627" started-at="2022-01-05T18:34:30 ICT" finished-at="2022-01-05T18:34:31 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- Testcases.Railway.TC10 -->
       <class name="Testcases.Railway.TC11">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Testcases.Railway.TC11@185d8b6]" name="beforeMethod" is-config="true" duration-ms="1174" started-at="2022-01-05T13:38:30 ICT" finished-at="2022-01-05T13:38:31 ICT">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Testcases.Railway.TC11@185d8b6]" name="beforeMethod" is-config="true" duration-ms="1139" started-at="2022-01-05T18:34:31 ICT" finished-at="2022-01-05T18:34:32 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC11()[pri:0, instance:Testcases.Railway.TC11@185d8b6]" name="TC11" duration-ms="3642" started-at="2022-01-05T13:38:31 ICT" description="TC11 - User can&#039;t create account while password and PID fields are empty" finished-at="2022-01-05T13:38:35 ICT">
+        <test-method status="PASS" signature="TC11()[pri:0, instance:Testcases.Railway.TC11@185d8b6]" name="TC11" duration-ms="3601" started-at="2022-01-05T18:34:32 ICT" description="TC11 - User can&#039;t create account while password and PID fields are empty" finished-at="2022-01-05T18:34:35 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC11 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Testcases.Railway.TC11@185d8b6]" name="afterMethod" is-config="true" duration-ms="592" started-at="2022-01-05T13:38:35 ICT" finished-at="2022-01-05T13:38:35 ICT">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Testcases.Railway.TC11@185d8b6]" name="afterMethod" is-config="true" duration-ms="594" started-at="2022-01-05T18:34:35 ICT" finished-at="2022-01-05T18:34:36 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- Testcases.Railway.TC11 -->
       <class name="Testcases.Railway.TC01">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Testcases.Railway.TC01@ff5b51f]" name="beforeMethod" is-config="true" duration-ms="2641" started-at="2022-01-05T13:37:29 ICT" finished-at="2022-01-05T13:37:31 ICT">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Testcases.Railway.TC01@ff5b51f]" name="beforeMethod" is-config="true" duration-ms="3454" started-at="2022-01-05T18:33:25 ICT" finished-at="2022-01-05T18:33:28 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="TC01()[pri:0, instance:Testcases.Railway.TC01@ff5b51f]" name="TC01" duration-ms="4079" started-at="2022-01-05T13:37:31 ICT" description="TC01 - User can log into Railway with valid username and password" finished-at="2022-01-05T13:37:35 ICT">
+        <test-method status="FAIL" signature="TC01()[pri:0, instance:Testcases.Railway.TC01@ff5b51f]" name="TC01" duration-ms="5092" started-at="2022-01-05T18:33:28 ICT" description="TC01 - User can log into Railway with valid username and password" finished-at="2022-01-05T18:33:33 ICT">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Welcome message is not displayed as expected expected [Welcome hehehe@mailinator.com] but found []]]>
@@ -501,21 +501,21 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC01 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Testcases.Railway.TC01@ff5b51f]" name="afterMethod" is-config="true" duration-ms="619" started-at="2022-01-05T13:37:35 ICT" finished-at="2022-01-05T13:37:36 ICT">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Testcases.Railway.TC01@ff5b51f]" name="afterMethod" is-config="true" duration-ms="638" started-at="2022-01-05T18:33:33 ICT" finished-at="2022-01-05T18:33:34 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- Testcases.Railway.TC01 -->
       <class name="Testcases.Railway.TC02">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Testcases.Railway.TC02@5f9d02cb]" name="beforeMethod" is-config="true" duration-ms="1149" started-at="2022-01-05T13:37:36 ICT" finished-at="2022-01-05T13:37:37 ICT">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Testcases.Railway.TC02@5f9d02cb]" name="beforeMethod" is-config="true" duration-ms="1339" started-at="2022-01-05T18:33:34 ICT" finished-at="2022-01-05T18:33:35 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC02()[pri:0, instance:Testcases.Railway.TC02@5f9d02cb]" name="TC02" duration-ms="3449" started-at="2022-01-05T13:37:37 ICT" description="TC02 - User can&#039;t login with blank &#039;Username&#039; textbox" finished-at="2022-01-05T13:37:41 ICT">
+        <test-method status="PASS" signature="TC02()[pri:0, instance:Testcases.Railway.TC02@5f9d02cb]" name="TC02" duration-ms="3680" started-at="2022-01-05T18:33:35 ICT" description="TC02 - User can&#039;t login with blank &#039;Username&#039; textbox" finished-at="2022-01-05T18:33:39 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC02 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Testcases.Railway.TC02@5f9d02cb]" name="afterMethod" is-config="true" duration-ms="594" started-at="2022-01-05T13:37:41 ICT" finished-at="2022-01-05T13:37:41 ICT">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Testcases.Railway.TC02@5f9d02cb]" name="afterMethod" is-config="true" duration-ms="621" started-at="2022-01-05T18:33:39 ICT" finished-at="2022-01-05T18:33:39 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->

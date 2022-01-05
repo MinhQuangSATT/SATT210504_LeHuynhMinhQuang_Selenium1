@@ -12,22 +12,22 @@ public class LoginPage extends GeneralPage{
     private final By lblLoginErrorMsg = By.xpath("//p[@class='message error LoginForm']");
 
     // Elements
-    public WebElement getTextUsername()
+    protected WebElement getTextUsername()
     {
         return Constant.WEBDRIVER.findElement(txtUsername);
     }
 
-    public WebElement getTextPassword()
+    protected WebElement getTextPassword()
     {
         return Constant.WEBDRIVER.findElement(txtPassword);
     }
 
-    public WebElement getButtonLogin()
+    protected WebElement getButtonLogin()
     {
         return Constant.WEBDRIVER.findElement(btnLogin);
     }
 
-    public WebElement getLabelLoginErrorMessage()
+    protected WebElement getLabelLoginErrorMessage()
     {
         return Constant.WEBDRIVER.findElement(lblLoginErrorMsg);
     }

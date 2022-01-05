@@ -15,7 +15,7 @@ public class TicketPricePage extends GeneralPage {
     private final By txtSBC = By.xpath("//*[normalize-space(text())='Price (VND)']/../td[count(//td[text()='SBC']//preceding-sibling::td)+1]");
 
     // Elements
-    public WebElement getLabelTicketTableHeader()
+    protected WebElement getLabelTicketTableHeader()
     {
         return Constant.WEBDRIVER.findElement(lblTicketTableHeader);
     }
@@ -23,18 +23,23 @@ public class TicketPricePage extends GeneralPage {
     protected WebElement getTxtHS() {
         return Constant.WEBDRIVER.findElement(txtHS);
     }
+
     protected WebElement getTxtSS() {
         return Constant.WEBDRIVER.findElement(txtSS);
     }
+
     protected WebElement getTxtSSC() {
         return Constant.WEBDRIVER.findElement(txtSSC);
     }
+
     protected WebElement getTxtHB() {
         return Constant.WEBDRIVER.findElement(txtHB);
     }
+
     protected WebElement getTxtSB() {
         return Constant.WEBDRIVER.findElement(txtSB);
     }
+
     protected WebElement getTxtSBC() {
         return Constant.WEBDRIVER.findElement(txtSBC);
     }
