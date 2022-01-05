@@ -10,7 +10,7 @@ To run any Test case in this project :
 
 Or if you want to run parallel all Test cases :
 - Open testng.xml by Intellij.
-- Config the 'thread-count' option as many as you want to run Test Cases as the same time.
+- Config the 'thread-count' option as many as you want to run Test Cases at the same time.
 - Run testng.xml
 
 To see the report result of test cases , you can :
