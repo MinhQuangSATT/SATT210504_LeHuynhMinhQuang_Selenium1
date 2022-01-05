@@ -1,8 +1,8 @@
 package PageObjects.Railway;
 
-import Constant.Constant;
+import Common.Constant;
+import Common.Utilities;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
 public class RegisterPage {
@@ -71,8 +71,7 @@ public class RegisterPage {
         this.getTextConfirmPassword().sendKeys(confirmPassword);
         this.getTextPID().sendKeys(pid);
 
-        JavascriptExecutor js = (JavascriptExecutor)Constant.WEBDRIVER;
-        js.executeScript("window.scrollBy(0,350)", "");
+        Utilities.scrollPage(getButtonRegister());
 
         this.getButtonRegister().click();
     }

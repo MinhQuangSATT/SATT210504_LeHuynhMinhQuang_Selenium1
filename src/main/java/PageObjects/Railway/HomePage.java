@@ -1,6 +1,6 @@
 package PageObjects.Railway;
 
-import Constant.Constant;
+import Common.Constant;
 
 public class HomePage extends  GeneralPage {
     // Locators

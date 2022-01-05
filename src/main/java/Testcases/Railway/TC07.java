@@ -1,7 +1,7 @@
 package Testcases.Railway;
 
 import Common.Utilities;
-import Constant.Constant;
+import Common.Constant;
 import PageObjects.Railway.HomePage;
 import PageObjects.Railway.RegisterPage;
 import org.testng.Assert;

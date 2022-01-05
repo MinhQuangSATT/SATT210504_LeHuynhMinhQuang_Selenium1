@@ -1,5 +1,8 @@
 package Common;
 
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
+
 import java.util.Random;
 
 public class Utilities {
@@ -26,5 +29,11 @@ public class Utilities {
     {
         int n = 10;
         return java.time.LocalTime.now()+getAlphaNumericString(n)+"@email.com";
+    }
+
+    public static void scrollPage(WebElement element)
+    {
+        JavascriptExecutor js = (JavascriptExecutor)Constant.WEBDRIVER;
+        js.executeScript("arguments[0].scrollIntoView();",element);
     }
 }

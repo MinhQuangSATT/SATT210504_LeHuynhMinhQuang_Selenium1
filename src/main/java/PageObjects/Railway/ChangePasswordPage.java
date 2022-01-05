@@ -1,6 +1,6 @@
 package PageObjects.Railway;
 
-import Constant.Constant;
+import Common.Constant;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -38,7 +38,6 @@ public class ChangePasswordPage {
     // Methods
     public void changePassword(String currentPassword,String newPassword,String confirmPassword)
     {
-        //Submit register credentials
         this.getTextCurrentPassword().sendKeys(currentPassword);
         this.getTextNewPassword().sendKeys(newPassword);
         this.getTextConfirmPassword().sendKeys(confirmPassword);

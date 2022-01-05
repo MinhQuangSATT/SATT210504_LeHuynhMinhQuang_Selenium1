@@ -1,0 +1,44 @@
+{
+  "TC09": {
+    "currentPassword": "147258369",
+    "newPassword": "a123:\"/{}!@$",
+    "confirmPassword": "b456:\"/{}!@$"
+  },
+  "TC14": {
+    "departDate": "1/16/2022",
+    "departStation": "Nha Trang",
+    "arriveStation": "Sài Gòn",
+    "seatType": "Soft seat with air conditioner",
+    "ticketAmount": "5"
+  },
+  "TC15": {
+    "departStation": "Đà Nẵng",
+    "arriveStation": "Sài Gòn",
+    "HS": "310000",
+    "SS": "335000",
+    "SSC": "360000",
+    "HB": "410000",
+    "SB": "460000",
+    "SBC": "510000"
+  },
+  "TC16": {
+    "departDate": "1/16/2022",
+    "departStation": "Phan Thiết",
+    "arriveStation": "Sài Gòn",
+    "seatType": "Soft seat",
+    "ticketAmount": "1"
+  },
+  "TC17": {
+    "departDate1": "1/16/2022",
+    "departStation1": "Phan Thiết",
+    "arriveStation1": "Sài Gòn",
+    "seatType1": "Hard seat",
+    "ticketAmount1": "10",
+
+    "departDate2": "1/16/2022",
+    "departStation2": "Đà Nẵng",
+    "arriveStation2": "Huế",
+    "seatType2": "Soft seat",
+    "ticketAmount2": "1"
+  }
+}

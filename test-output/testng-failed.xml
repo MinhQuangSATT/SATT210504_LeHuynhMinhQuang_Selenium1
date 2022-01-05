@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [All Test Suite]" parallel="classes">
+  <test thread-count="1" name="TestSuite(failed)" parallel="classes">
+    <classes>
+      <class name="Testcases.Railway.TC01">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="TC01"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- Testcases.Railway.TC01 -->
+      <class name="Testcases.Railway.TC05">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="TC05"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- Testcases.Railway.TC05 -->
+      <class name="Testcases.Railway.TC15">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="TC15" invocation-numbers="0"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- Testcases.Railway.TC15 -->
+      <class name="Testcases.Railway.TC03">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="TC03"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- Testcases.Railway.TC03 -->
+      <class name="Testcases.Railway.TC07">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="TC07"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- Testcases.Railway.TC07 -->
+    </classes>
+  </test> <!-- TestSuite(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

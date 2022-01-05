@@ -27,7 +27,7 @@ public class TC11 extends TestBase {
         String actualPIDValidationErrorMessage = registerPage.getPIDValidationErrorMessage();
 
         Assert.assertEquals(actualErrorMessage,"There're errors in the form. Please correct the errors and try again.");
-        Assert.assertEquals(actualPasswordValidationErrorMessage,"Invalid password length.");
-        Assert.assertEquals(actualPIDValidationErrorMessage,"Invalid ID length.");
+        Assert.assertEquals(actualPasswordValidationErrorMessage,"Invalid password length");
+        Assert.assertEquals(actualPIDValidationErrorMessage,"Invalid ID length");
     }
 }
